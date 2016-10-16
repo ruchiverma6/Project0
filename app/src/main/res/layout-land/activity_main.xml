@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/style_main_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_nanodegree_apps" />
+
+    <Button
+        android:id="@+id/popular_movies_btn"
+        style="@style/style_main_btn"
+        android:layout_width="@dimen/btn_main_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:gravity="center"
+        android:onClick="navigateToPopularMovies"
+        android:text="@string/popular_movies">
+
+    </Button>
+
+    <Button
+        android:id="@+id/stock_hawk_btn"
+        style="@style/style_main_btn"
+        android:layout_width="@dimen/btn_main_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popular_movies_btn"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:gravity="center"
+        android:onClick="navigateToStockHawk"
+        android:text="@string/stock_hawk">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buid_it_bigger"
+        style="@style/style_main_btn"
+        android:layout_width="@dimen/btn_main_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_hawk_btn"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:onClick="navigateToBuildItBigger"
+        android:gravity="center"
+
+        android:text="@string/build_it_bigger">
+
+    </Button>
+
+    <Button
+        android:id="@+id/make_your_app_material_btn"
+        style="@style/style_main_btn"
+        android:layout_width="@dimen/btn_main_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buid_it_bigger"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:gravity="center"
+        android:onClick="navigateToMakeYourAppMaterial"
+        android:text="@string/make_your_app_material">
+        </Button>
+
+    <Button
+        android:id="@+id/go_ubiquitous_btn"
+        style="@style/style_main_btn"
+        android:layout_width="@dimen/btn_main_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/make_your_app_material_btn"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:gravity="center"
+        android:onClick="navigateToGoUbiquitous"
+        android:text="@string/go_ubiquitous">
+
+    </Button>
+
+    <Button
+        android:id="@+id/capstone_btn"
+        style="@style/style_main_btn"
+        android:layout_width="@dimen/btn_main_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go_ubiquitous_btn"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:gravity="center"
+        android:onClick="navigateToCapstone"
+        android:text="@string/capstone">
+
+    </Button>
+
+</RelativeLayout>
+</ScrollView>
